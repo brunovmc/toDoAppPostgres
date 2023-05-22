@@ -1,0 +1,117 @@
+body {
+  background-color: #554946;
+  color: #bda49e;
+  font-size: 2em;
+}
+
+.app {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.category-icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.category-icon {
+  position: relative;
+  font-size: 24px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.category-badge {
+  top: -8px;
+  right: -8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #d03c23;
+  color: #bda49e;
+  font-size: 12px;
+  font-weight: bold;
+  border: 2px solid #bda49e;
+}
+
+.category-icon.active .category-badge {
+  display: block;
+}
+
+.category-icon.active {
+  color: #4caf50;
+}
+
+.todo-container {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.input-container input {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+.input-container button {
+  padding: 0.5rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+.task-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.task-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.task-list li.completed .task-text {
+  text-decoration: line-through;
+}
+
+.task-list li input[type="checkbox"] {
+  margin: 10px;
+  transform: scale(1.5);
+  align-self: center;
+}
+
+.delete-icon {
+  margin-left: 0.5rem;
+  color: #AB5648;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.delete-icon.enabled {
+  pointer-events: auto;
+  color: red;
+}
