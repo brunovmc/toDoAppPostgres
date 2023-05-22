@@ -1,4 +1,4 @@
-# teste
+# To Do App
 
 ## Basic Features
 Here are some of the basic features included in this project:
