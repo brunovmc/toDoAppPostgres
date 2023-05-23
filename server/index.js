@@ -18,6 +18,20 @@ const pool = new Pool({
   port: process.env.DB_PORT || 5432,
 });
 
+// Middleware for inspecting response headers
+app.use((req, res, next) => {
+  res.on("finish", () => {
+    const headers = res.getHeaders();
+    const cspHeader = headers["content-security-policy"];
+    const xCspHeader = headers["x-content-security-policy"];
+
+    console.log("Content-Security-Policy:", cspHeader);
+    console.log("X-Content-Security-Policy:", xCspHeader);
+  });
+
+  next();
+});
+
 // Get all tasks
 app.get("/api/tasks", (req, res) => {
   console.log("Fetching tasks...");
