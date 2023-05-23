@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "startLocal": "start cmd.exe /c \"cd client && start cmd.exe /k npm start\" & start cmd.exe /c \"cd server && start cmd.exe /k node index.js\"",
-    "start": "cd client && npm start & cd server && node index.js"
+    "start": "start cmd.exe /c \"cd client && start cmd.exe /k npm start\" & start cmd.exe /c \"cd server && start cmd.exe /k node index.js\""
   },
   "keywords": [],
   "author": "",
