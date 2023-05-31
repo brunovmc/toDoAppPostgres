@@ -1,4 +1,4 @@
-![alt text](\TodoAppPrint.jpg)
+![alt text](TodoAppPrint.jpg)
 
 # To-Do App
 
